@@ -1,4 +1,4 @@
-# **Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF): Understanding, Mitigations, and Examples**
+# **Cross-Site Perils: A Technical Analysis of Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF)**
 
 ## **Abstract**
 Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) are among the most pervasive threats to web application security, capable of compromising user data, sessions, and critical system operations. This paper explores how these vulnerabilities operate, the strategies available to mitigate their risks, methods for detecting exploitation attempts, and real-world examples that highlight their impact. By understanding the mechanisms behind XSS and CSRF, developers and organizations can take actionable steps to enhance the security and resilience of their systems.
