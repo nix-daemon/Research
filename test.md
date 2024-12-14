@@ -103,3 +103,9 @@ XSS and CSRF vulnerabilities are critical threats to web application security. A
 
 ---
 
+## **References**
+1. Kirda, E., Kruegel, C., Vigna, G., & Jovanovic, N. (2008). "Cross-Site Scripting Prevention." *Symposium on Network Security*.
+2. Gupta, S. (2019). "Magecart and the British Airways Breach: A Case Study." *Journal of Cybersecurity Research*.
+3. Kamkar, S. (2006). "The MySpace Worm: Anatomy of a Viral Attack." *DefCon Proceedings*.
+4. OWASP. (2023). "XSS Prevention Cheat Sheet." *OWASP Foundation*.  
+5. OWASP. (2023). "CSRF Prevention Cheat Sheet." *OWASP Foundation*.
