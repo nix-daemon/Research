@@ -25,10 +25,12 @@ XSS vulnerabilities occur when a website fails to properly sanitize user inputs,
   <button type="submit">Search</button>
 </form>
 ```
+*This form allows a user to search by entering a query (`q`). It is vulnerable to XSS if the `q` parameter is not sanitized.*
 
 ```html
 http://example.com/search?q=<script>alert('XSS');</script>
 ```
+*This malicious URL injects a JavaScript alert into the query (`q`), demonstrating reflected XSS.*
 
 ### **2.2 Steps of a Stored XSS Attack**
 1. An attacker inputs malicious JavaScript into a web form.  
@@ -40,10 +42,12 @@ http://example.com/search?q=<script>alert('XSS');</script>
   <p>Comment: <%= user_comment %></p>
 </div>
 ```
+*This code displays user comments on a page. It is vulnerable to stored XSS if `user_comment` is not sanitized.*
 
 ```html
 <script>alert('XSS');</script>
 ```
+*This is a typical payload used in stored XSS attacks to execute a JavaScript alert.*
 
 ---
 
@@ -65,6 +69,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     });
 });
 ```
+*This script intercepts credit card details entered into a form and sends them to a malicious server.*
 
 ### **3.2 CSRF in Action**
 The Gmail CSRF attack in 2007 exposed how easily attackers could exploit trust. By tricking users into clicking malicious links, attackers managed to forward emails to unauthorized recipients. More recently, a CSRF flaw discovered in Facebook in 2018 allowed attackers to embed malicious links in third-party websites, causing unsuspecting users to perform unintended actions such as liking pages or sharing content without their consent.
@@ -78,6 +83,7 @@ The Gmail CSRF attack in 2007 exposed how easily attackers could exploit trust. 
     document.forms[0].submit(); // Automatically submit the form
 </script>
 ```
+*This script automatically submits a hidden form to "like" a Facebook page without the user's consent.*
 
 ---
 
@@ -109,3 +115,5 @@ XSS and CSRF vulnerabilities are critical threats to web application security. A
 3. Kamkar, S. (2006). "The MySpace Worm: Anatomy of a Viral Attack." *DefCon Proceedings*.
 4. OWASP. (2023). "XSS Prevention Cheat Sheet." *OWASP Foundation*.  
 5. OWASP. (2023). "CSRF Prevention Cheat Sheet." *OWASP Foundation*.
+
+---
