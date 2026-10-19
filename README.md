@@ -4,7 +4,7 @@ A technical whitepaper examining cross-site scripting (XSS),
 its exploitation mechanics, security impact, and mitigation.
 
 ## Paper
-[Read the full whitepaper](./cross-site-scripting-whitepaper.pdf)
+[Read the full whitepaper](./'Cross-Site Peril.md')
 
 ## Topics
 - Reflected XSS
